@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 
-$db = mysqli_connect('localhost', 'root', '', 'heroku_5e9ae621cca5225');
+$db = mysqli_connect('localhost', 'b2d9ee006dc0a9', '38ea438c', 'heroku_5e9ae621cca5225');
 
 
 if (isset($_POST['reg_user'])) {
