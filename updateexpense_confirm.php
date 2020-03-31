@@ -6,7 +6,7 @@ $budget = $_POST['budget'];
 
 
 $conn = mysqli_connect("localhost","root","") or die (mysqli_error($conn));
-$db = mysqli_select_db($conn,"db_bank");
+$db = mysqli_select_db($conn,"heroku_5e9ae621cca5225");
 
 $sql = "UPDATE tblexpense SET exp_name = '$expname', budget = $budget WHERE exp_id = $exp_id " ; 
 $q = mysqli_query($conn,$sql) or die (mysqli_error($conn));
