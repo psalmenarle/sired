@@ -2,7 +2,7 @@
   $exp_id = $_GET ['id'];
   
 $conn = mysqli_connect("localhost","root","") or die (mysqli_error($conn));
-$db = mysqli_select_db($conn,"db_bank");
+$db = mysqli_select_db($conn,"heroku_5e9ae621cca5225");
 
 $sql = "SELECT * FROM tblexpense WHERE exp_id = $exp_id";
 $q = mysqli_query($conn,$sql) or die (mysqli_error($conn));
